@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.helloworld.nfc"
+        minSdkVersion 14
+        targetSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/ndeftools-1.2.4-SNAPSHOT.jar')
+}

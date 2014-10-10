@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFC Comp. Movil</string>
+    <string name="data">¡Pon un Tag para leerlo!</string>
+    <string name="idTag"></string>
+    <string name="wifiStatus"></string>
+    <string name="BTStatus" />
+
+</resources>

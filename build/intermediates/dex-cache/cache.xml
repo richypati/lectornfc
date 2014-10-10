@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/ricardo/AndroidStudioProjects/HelloWorldNFC Solution/app/build/intermediates/pre-dexed/debug/ndeftools-1.2.4-SNAPSHOT-27ca55c069a8f9617942ad4fb94f2cb7ebb7d339.jar"
+        jar="/home/ricardo/AndroidStudioProjects/HelloWorldNFC Solution/app/libs/ndeftools-1.2.4-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6c2204a25bb4f246153f823d7facc4f2e7cb8e5b"/>
+
+</pre-dex-items>

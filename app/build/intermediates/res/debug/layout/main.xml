@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/data"
+            android:textColor="#fffdff34"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textTagID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag ID: "
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:id="@+id/tagID"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/idTag"
+            android:textColor="#ff2cff40"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:autoText="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textWifiStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wifi Status: "
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:id="@+id/wifiStatus"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/wifiStatus"
+            android:textColor="#ff0892ff"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textBTStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Status: "
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:id="@+id/bluetoothStatus"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/BTStatus"
+            android:textColor="#ff910ab7"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- From: file:/home/ricardo/AndroidStudioProjects/HelloWorldNFC%20Solution/app/src/main/res/layout/main.xml -->

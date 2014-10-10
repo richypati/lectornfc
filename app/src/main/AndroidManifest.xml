@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.helloworld.nfc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- Restricción de versión SDK -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:maxSdkVersion="20"/>
+
+    <!-- Permisos Vibrador" -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+	<!-- Permisos NFC -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- En el Google Play solo se va a mostrar la App para dispositivos con hardware NFC -->
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+
+    <!-- Permisos WIFI -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- Permisos Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <activity
+            android:name=".HelloWorldNFCActivity"
+            android:label="@string/app_name" >
+
+            <!-- Especifica que ésta va a ser la actividad principal -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Cuando un tag se acerca al dispositivo (es decir, se realiza un Intento)
+                el dispositivo abre la App si no está abierta.
+                Si existen otras Apps que tengan esta misma opción, al realizar un intento,
+                el SO va a mostrar un mensaje con las Apps para elegir la que desea abrir.
+             -->
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+	</application>
+
+</manifest>

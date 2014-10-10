@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/ricardo/AndroidStudioProjects/HelloWorldNFC%20Solution/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="BTStatus"></string>
+    <string name="app_name">NFC Comp. Movil</string>
+    <string name="data">¡Pon un Tag para leerlo!</string>
+    <string name="idTag"></string>
+    <string name="wifiStatus"></string>
+
+</resources>
